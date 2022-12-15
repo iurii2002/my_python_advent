@@ -54,7 +54,6 @@ def day3_2():
                 elf_group = []
         for elf_g in elf_groups:
             print(elf_g)
-            items_dict = {}
 
             elf_1 = set(elf_g[0])
             elf_2 = set(elf_g[1])
@@ -65,26 +64,6 @@ def day3_2():
 
             result += priority[inter.pop()]
 
-            # for item in elf_1:
-            #     if item not in items_dict.keys():
-            #         items_dict[item] = 1
-            #
-            # for item in elf_2:
-            #     if item in items_dict.keys():
-            #         items_dict[item] = 2
-            #
-            # for item in elf_3:
-            #     if item in items_dict.keys():
-            #         if items_dict[item] == 2:
-            #             badge = item
-            #             print(badge, items_dict)
-            #             if badge.islower():
-            #                 current = string.ascii_lowercase.index(badge) + 1
-            #                 result += current
-            #             if badge.isupper():
-            #                 current = string.ascii_lowercase.index(badge.lower()) + 27
-            #                 result += current
-            #             print(current, result)
 
     return result
 
